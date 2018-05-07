@@ -1,5 +1,28 @@
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="#">
-    <img src="/images/github_logo.png" width="50" height="50" alt="">
+    <img src="/images/logo.png" width="30" height="30" alt="">
   </a>
 </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <div class="btn-group-vertical" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary"><i class="fas fa-users"></i>Personas</button>
+        <button type="button" class="btn btn-secondary">Cursos</button>
+        <button type="button" class="btn btn-secondary">Bautismos</button>
+      </div>
+
+    </div>
+    <div class="col-10">
+
+      <% var i = 0;%>
+      <h1><%= view.pathFromApp %></h1>
+      <ul>
+        <% for(i = 0 ;i < 5;i++){ %>
+        <li>el valor es <%= i %></li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</div>
